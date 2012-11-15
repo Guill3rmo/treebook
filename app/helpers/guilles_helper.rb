@@ -1,0 +1,2 @@
+module GuillesHelper
+end

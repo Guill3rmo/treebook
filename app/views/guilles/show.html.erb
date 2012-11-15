@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre: </b>
+  <%= @guille.name %>
+</p>
+
+<p>
+  <b>Mensaje: </b>
+  <%= @guille.content %>
+</p>
+
+<p>
+  <b>Edad: </b>
+  <%= @guille.edad %>
+</p>
+
+
+<%= link_to 'Edit', edit_guille_path(@guille) %> |
+<%= link_to 'Back', guilles_path %>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Treebook</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class = "navbar" >
+	<div class = "navbar-inner">
+		<div class = "container">
+			<a href="#" class = "brand">Proyecto TreeBook</a>
+				<ul class = "nav">
+					<li><%= link_to "Todos los mensajes" , guilles_path %></li>
+				</ul>
+		</div>
+	</div>
+</div>
+
+	<div class = "container">
+		<%= yield %>
+	</div>
+
+</body>
+</html>

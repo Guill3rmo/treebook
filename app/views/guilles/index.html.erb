@@ -1,0 +1,22 @@
+
+<% #encoding:utf-8 %>
+<div class = "page-header" >
+  <h1>Estados</h1>
+</div>
+
+<% @guilles.each do |guille| %>
+  <div class = "status" >
+    <strong><%= guille.name %></strong>
+    <p><%= guille.content %></p>
+      <div class = "meta">
+        <%= link_to time_ago_in_words(guille.created_at) + " después", guille %> |
+        <%= link_to "Mostrar", guille %>
+        <span class="admin" >
+          | <%= link_to "Editar", edit_status_path(guille) %> |
+          <%= link_to "Borrar", guille, method: :delete, data: { confirm: "¿Estas seguro de borrar?"} %>
+        </span>
+      </div>
+  </div>
+<% end %>
+
+
