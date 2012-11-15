@@ -4,6 +4,8 @@
   <h1>Estados</h1>
 </div>
 
+<%= link_to "Crear nuevo mensaje", new_status_path , class: "btn-success" %>
+
 <% @guilles.each do |guille| %>
   <div class = "status" >
     <strong><%= guille.name %></strong>
