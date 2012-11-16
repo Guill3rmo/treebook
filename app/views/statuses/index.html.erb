@@ -1,9 +1,9 @@
 <%#encoding:utf-8 %>
-<div class = "page-header" >
+<div class="hero-unit">
   <h1>Estados</h1>
 </div>
 
-<%= link_to "Crear nuevo mensaje", new_status_path , class: "btn-success" %>
+<%= link_to "Crear nuevo mensaje", new_status_path , class: "btn btn-success" %>
 
 <% @statuses.each do |status| %>
   <div class = "status" >
