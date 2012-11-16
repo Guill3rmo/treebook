@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 
 gem 'pg'
 gem 'devise'
+gem 'simple_form'
+gem 'country_select'
 
 
 # Gems used only for assets and not required

@@ -8,7 +8,7 @@
 
 <% @guilles.each do |guille| %>
   <div class = "status" >
-    <strong><%= guille.name %></strong>
+    <strong>Name</strong>
     <p><%= guille.content %></p>
       <div class = "meta">
         <%= link_to time_ago_in_words(guille.created_at) + " después", guille %> |
