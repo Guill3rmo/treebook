@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-	 test "elusuario debe ingresar su pimer nombre" do
+	 test "el usuario debe ingresar su primer nombre" do
 	 	user = User.new
 	 	assert !user.save
 	 	assert !user.errors[:first_name].empty?
@@ -23,7 +23,6 @@ class UserTest < ActiveSupport::TestCase
 	 	user = User.new
 	 	user.profile_name = users(:guillo).profile_name
 	 	assert !user.save
-	 	puts user.errors.inspect
 	 	assert !user.errors[:profile_name].empty?
 	  end
 
@@ -32,7 +31,7 @@ class UserTest < ActiveSupport::TestCase
 	  	user.profile_name = "perfil con espacios "
 	  	assert !user.save
 	  	assert !user.errors[:profile_name].empty?
-	  	assert !user.errors[:profile_name].include?("Debe tener el formato correcto")
+	  	assert user.errors[:profile_name].include?("Debe tener el formato correcto")
   	end
  
 
