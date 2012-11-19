@@ -20,7 +20,7 @@
 						<li><%= link_to current_user.full_name, edit_user_registration_path %></li>
 						<li><%= link_to "Salir" ,destroy_user_session_path, method: :delete %></li>
 				<% else %>
-						<li><%= link_to "Registrarse", user_registration_path %></li>
+						<li><%= link_to "Registrarse", new_user_registration_path %></li>
 						<li><%= link_to "Iniciar sesion", new_user_session_path %></li>
 				<% end %>
 				</ul>

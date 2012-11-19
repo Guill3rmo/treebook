@@ -6,6 +6,8 @@
 development:
   adapter: postgresql
   database: treebook_development
+  username: postgres
+  password: 123
   pool: 5
   timeout: 5000
 
@@ -16,6 +18,8 @@ development:
 test:
   adapter: postgresql
   database: treebook_test
+  username: postgres
+  password: 123
   pool: 5
   timeout: 5000
 
